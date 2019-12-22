@@ -212,20 +212,20 @@ public struct DateTime{
 //
 //        return tmp
 //    }
-    init(dateCom: String, timeCom: String, hourRange: Int){
+    public init(dateCom: String, timeCom: String, hourRange: Int){
         self.timeCom = timeCom
         self.dateCom = dateCom
         self.hourRange = hourRange
     }
-    init(timeCom: String, hourRange: Int){
+    public init(timeCom: String, hourRange: Int){
         self.timeCom = timeCom
         self.hourRange = hourRange
     }
-    init(dateCom: String){
+    public init(dateCom: String){
         self.dateCom = dateCom
     }
     
-    init(str: String, dateCom: String, timeCom: String, hourRange: Int) {
+    public init(str: String, dateCom: String, timeCom: String, hourRange: Int) {
         let com1 = str.components(separatedBy: " ")
         let com2 = com1[0].components(separatedBy: dateCom)
         year = Int(com2[0])!
@@ -242,7 +242,7 @@ public struct DateTime{
         self.hourRange = hourRange
     }
     
-    init(str: String, dateCom: String) {
+    public init(str: String, dateCom: String) {
         let com2 = str.components(separatedBy: dateCom)
         year = Int(com2[0])!
         month = Int(com2[1])!
@@ -251,7 +251,7 @@ public struct DateTime{
         self.dateCom = dateCom
     }
     
-    init(str: String, timeCom: String, hourRange: Int) {
+    public init(str: String, timeCom: String, hourRange: Int) {
         let com3 = str.components(separatedBy: timeCom)
         hour = Int(com3[0])!
         minute = Int(com3[1])!
