@@ -193,7 +193,7 @@ public struct DateTime{
     public func CompareTimeToStr(data: DateTime) -> String{
         let hourToMin = 60 * (self.hour - data.hour)
         let minToSec = ((hourToMin + self.minute) - data.minute) * 60
-        let sec = ((Float(minToSec) + self.second) - data.second
+        let sec = (Float(minToSec) + self.second) - data.second
                         
         let toHour: Int = Int(abs(sec) / 3600)
         let tmpSec = sec - Float(3600*toHour)
