@@ -109,7 +109,9 @@ public struct DateTime{
         }
     }
 //--------------------------------------------------------------------
-    
+
+// HOUR:MINUTE:SECOND System
+//--------------------------------------------------------------------
     static let DayHour = 24
     public var hourRange = Int.max
     
