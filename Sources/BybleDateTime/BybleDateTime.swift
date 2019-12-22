@@ -111,7 +111,7 @@ public struct DateTime{
 //--------------------------------------------------------------------
     
     static let DayHour = 24
-    public var hourRange = 23
+    public var hourRange = Int.max
     
     private var _hour: Int = 0
     public var hour: Int{
