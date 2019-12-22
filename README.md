@@ -37,16 +37,16 @@ public func CompareTimeToStruct(data: DateTime) -> Time
 public func CompareTimeToStr(data: DateTime) -> String
 
 # There is also Time Struct
-public struct Time{
-    var hour: Int
-    var minute: Int
-    var second: Float
-    init (hour: Int, minute: Int, second: Float){
-        self.hour = hour
-        self.minute = minute
-        self.second = second
-    }
-}
+public struct Time{. 
+    var hour: Int. 
+    var minute: Int. 
+    var second: Float. 
+    init (hour: Int, minute: Int, second: Float){. 
+        self.hour = hour. 
+        self.minute = minute. 
+        self.second = second. 
+    }. 
+}. 
 
 
 # Sample Code
