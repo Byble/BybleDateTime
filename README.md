@@ -71,3 +71,9 @@ print(date.CompareTime(data: date2))
 print(date.GetStr())
 print(date.date)
 ```
+
+## Install
+
+#### Use Xcode SPM
+### https://github.com/Byble/BybleDateTime.git
+### Current Version is 2.0.2
