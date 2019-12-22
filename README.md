@@ -26,7 +26,8 @@ hour would be 0 ~ 23h
 EX : 31
 hour would be 8 ~ 31h
 
-# Get Time by String with function (you could just access each variable even if you don't use this functions)
+# Get Time by String with function 
+# (you could just access each variable even if you don't use this functions)
 public func GetDateStr() -> String
 public func GetTimeStr() -> String
 public func GetStr() -> String
