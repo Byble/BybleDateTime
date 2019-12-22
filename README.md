@@ -38,6 +38,7 @@ public func CompareTimeToStruct(data: DateTime) -> Time
 public func CompareTimeToStr(data: DateTime) -> String
 
 ## There is also Time Struct
+
 “`
 public struct Time{
     var hour: Int
@@ -52,6 +53,7 @@ public struct Time{
 “`
 
 ## Sample Code
+
 “`
 import BybleDateTime
 
