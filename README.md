@@ -28,18 +28,24 @@ hour would be 8 ~ 31h
 
 ## Get Time by String with function   
 #### (you could just access each variable even if you don't use this functions)
+
+```swift
 public func GetDateStr() -> String
 public func GetTimeStr() -> String
 public func GetStr() -> String
+```
 
 ## Compare Time
+
+```swift
 public func CompareTime(data: DateTime) -> Float
 public func CompareTimeToStruct(data: DateTime) -> Time
 public func CompareTimeToStr(data: DateTime) -> String
+```
 
 ## There is also Time Struct
 
-'''swift
+```swift
 public struct Time {
     var hour: Int
     var minute: Int
@@ -50,11 +56,11 @@ public struct Time {
         self.second = second
     }
 }
-'''
+```
 
 ## Sample Code
 
-'''swift
+```swift
 import BybleDateTime
 
 let date = DateTime(str: "2020-12-12 30:30:30", dateCom: "-", timeCom: ":", hourRange: 31)
@@ -63,4 +69,4 @@ let date2 = DateTime(str: "2020-12-12 29:30:30", dateCom: "-", timeCom: ":", hou
 print(date.CompareTime(data: date2))
 print(date.GetStr())
 print(date.date)
-'''
+```
