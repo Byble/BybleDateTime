@@ -2,8 +2,8 @@
 
 Custom Date Time Library
 
-Not yet Date compare func function
-There is Only time compare function
+Not yet Date compare func function   
+There is Only time compare function   
 
 This Library is for who need hour over than 24h
 
@@ -17,12 +17,12 @@ public init(str: String, dateCom: String)
 public init(str: String, timeCom: String, hourRange: Int)
 ```
 
-dateCom means like In 2019-12-25 dateCom would be "-"
-timeCom means like In 12:12:12 timeCom would be ":"
-hourRange is that you can determine time range
+dateCom means like In 2019-12-25 dateCom would be "-"   
+timeCom means like In 12:12:12 timeCom would be ":"   
+hourRange is that you can determine time range   
 
-EX : 23 
-hour would be 0 ~ 23h
+EX : 23   
+hour would be 0 ~ 23h   
 
 EX : 31
 hour would be 8 ~ 31h
