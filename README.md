@@ -2,7 +2,7 @@
 
 Custom Date Time Library
 
-Not yet Date compare func function   
+Not yet Date compare function made   
 There is Only time compare function   
 
 This Library is for who need hour over than 24h
