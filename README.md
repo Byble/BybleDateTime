@@ -39,7 +39,8 @@ public func CompareTimeToStr(data: DateTime) -> String
 
 ## There is also Time Struct
 
-“`
+'''Swift
+
 public struct Time{
     var hour: Int
     var minute: Int
@@ -50,11 +51,12 @@ public struct Time{
         self.second = second
     }
 }
-“`
+
+'''
 
 ## Sample Code
 
-“`
+'''Swift
 import BybleDateTime
 
 let date = DateTime(str: "2020-12-12 30:30:30", dateCom: "-", timeCom: ":", hourRange: 31)
@@ -63,4 +65,5 @@ let date2 = DateTime(str: "2020-12-12 29:30:30", dateCom: "-", timeCom: ":", hou
 print(date.CompareTime(data: date2))
 print(date.GetStr())
 print(date.date)
-“`
+
+'''
