@@ -24,7 +24,7 @@ hourRange is that you can determine time range
 EX : 23   
 hour would be 0 ~ 23h   
 
-EX : 31
+EX : 31   
 hour would be 8 ~ 31h
 
 ## Get Time by String with function   
