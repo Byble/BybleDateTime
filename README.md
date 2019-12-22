@@ -8,13 +8,14 @@ There is Only time compare function
 This Library is for who need hour over than 24h
 
 ## How to Initialize 
-
+```swift
 public init(dateCom: String, timeCom: String, hourRange: Int)
 public init(timeCom: String, hourRange: Int)
 public init(dateCom: String)
 public init(str: String, dateCom: String, timeCom: String, hourRange: Int)
 public init(str: String, dateCom: String)
 public init(str: String, timeCom: String, hourRange: Int)
+```
 
 dateCom means like In 2019-12-25 dateCom would be "-"
 timeCom means like In 12:12:12 timeCom would be ":"
