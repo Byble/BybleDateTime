@@ -228,14 +228,14 @@ public struct DateTime{
     public init(str: String, dateCom: String, timeCom: String, hourRange: Int) {
         let com1 = str.components(separatedBy: " ")
         let com2 = com1[0].components(separatedBy: dateCom)
-        year = Int(com2[0])!
-        month = Int(com2[1])!
-        date = Int(com2[2])!
+        _year = Int(com2[0])!
+        _month = Int(com2[1])!
+        _date = Int(com2[2])!
         
         let com3 = com1[1].components(separatedBy: timeCom)
-        hour = Int(com3[0])!
-        minute = Int(com3[1])!
-        second = Float(com3[2])!
+        _hour = Int(com3[0])!
+        _minute = Int(com3[1])!
+        _second = Float(com3[2])!
         
         self.timeCom = timeCom
         self.dateCom = dateCom
@@ -244,18 +244,18 @@ public struct DateTime{
     
     public init(str: String, dateCom: String) {
         let com2 = str.components(separatedBy: dateCom)
-        year = Int(com2[0])!
-        month = Int(com2[1])!
-        date = Int(com2[2])!
+        _year = Int(com2[0])!
+        _month = Int(com2[1])!
+        _date = Int(com2[2])!
         
         self.dateCom = dateCom
     }
     
     public init(str: String, timeCom: String, hourRange: Int) {
         let com3 = str.components(separatedBy: timeCom)
-        hour = Int(com3[0])!
-        minute = Int(com3[1])!
-        second = Float(com3[2])!
+        _hour = Int(com3[0])!
+        _minute = Int(com3[1])!
+        _second = Float(com3[2])!
         
         self.timeCom = timeCom
         self.hourRange = hourRange
