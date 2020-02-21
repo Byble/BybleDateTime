@@ -211,7 +211,7 @@ public struct DateTime{
         
         return "\(toHour):\(toMin):\(String(format: "%.3f", toSec.roundToPlaces(places: 3)))"
     }
-    static func >(left: DateTime, right: DateTime) -> Bool{
+    static func > (left: inout DateTime, right: DateTime) -> Bool{
         if left.year > right.year { return true}
         else if left.year < right.year{ return false}
         
