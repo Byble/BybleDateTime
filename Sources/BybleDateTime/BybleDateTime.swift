@@ -22,7 +22,7 @@ public struct Time{
 public struct DateTime{
     var timeCom = ":"
     var dateCom = "-"
-    
+
 // YEAR-MONTH-DATE System
 //--------------------------------------------------------------------
     private var _year: Int = 2000
@@ -173,6 +173,13 @@ public struct DateTime{
         return "\(year)-\(month)-\(date) \(hour):\(minute):\(second)"
     }
 
+    public func IsNight(h: Int, m: Int) -> Bool{
+        if self.hour >= h && self.minute >= m{
+            return true
+        }else{
+            return false
+        }
+    }
     public func CompareTime(data: DateTime) -> Float{
         let hourToMin = 60 * (self.hour - data.hour)
         let minToSec = ((hourToMin + self.minute) - data.minute) * 60
@@ -203,6 +210,27 @@ public struct DateTime{
         var toSec: Float = tmpSec.truncatingRemainder(dividingBy: 60)
         
         return "\(toHour):\(toMin):\(String(format: "%.3f", toSec.roundToPlaces(places: 3)))"
+    }
+    static func >(left: DateTime, right: DateTime) -> Bool{
+        if left.year > right.year { return true}
+        else if left.year < right.year{ return false}
+        
+        if left.month > right.month { return true}
+        else if left.month < right.month { return false }
+        
+        if left.date > right.date { return true }
+        else if left.date < right.date { return false }
+        
+        if left.hour > right.hour { return true }
+        else if left.hour < right.hour { return false }
+        
+        if left.minute > right.minute { return true }
+        else if left.minute < right.minute { return false}
+        
+        if left.second > right.second { return true }
+        else if left.second < right.second { return false }
+        
+        return false
     }
 //    public func CompareDate(data: DateTime) -> DateTime{
 //        var tmp = DateTime(dateCom: self.dateCom)
