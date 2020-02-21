@@ -12,13 +12,13 @@ public struct Time: Equatable{
     var hour: Int
     var minute: Int
     var second: Float
-    init (hour: Int, minute: Int, second: Float){
+    public init (hour: Int, minute: Int, second: Float){
         self.hour = hour
         self.minute = minute
         self.second = second
     }
     
-    static func > (lhs: Time, rhs: Time){
+    static func > (lhs: Time, rhs: Time) -> Bool{
         if lhs.hour > rhs.hour { return true }
         else if lhs.hour < rhs.hour { return false }
         
