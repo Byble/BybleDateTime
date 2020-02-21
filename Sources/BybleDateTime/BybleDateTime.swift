@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Time{
+public struct Time: Equatable{
     var hour: Int
     var minute: Int
     var second: Float
@@ -17,9 +17,22 @@ public struct Time{
         self.minute = minute
         self.second = second
     }
+    
+    static func > (lhs: Time, rhs: Time){
+        if lhs.hour > rhs.hour { return true }
+        else if lhs.hour < rhs.hour { return false }
+        
+        if lhs.minute > rhs.minute { return true }
+        else if lhs.minute < rhs.minute { return false }
+        
+        if lhs.second > rhs.second { return true }
+        else if lhs.second < rhs.second { return false }
+        
+        return false
+    }
 }
 
-public struct DateTime{
+public struct DateTime: Equatable{
     var timeCom = ":"
     var dateCom = "-"
 
