@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Time: Equatable{
+public struct Time{
     var hour: Int
     var minute: Int
     var second: Float
@@ -18,21 +18,21 @@ public struct Time: Equatable{
         self.second = second
     }
     
-    static func > (lhs: Time, rhs: Time) -> Bool{
-        if lhs.hour > rhs.hour { return true }
-        else if lhs.hour < rhs.hour { return false }
+    static func < (lhs: Time, rhs: Time) -> Bool{
+        if lhs.hour < rhs.hour { return true }
+        else if lhs.hour > rhs.hour { return false }
         
-        if lhs.minute > rhs.minute { return true }
-        else if lhs.minute < rhs.minute { return false }
+        if lhs.minute < rhs.minute { return true }
+        else if lhs.minute > rhs.minute { return false }
         
-        if lhs.second > rhs.second { return true }
-        else if lhs.second < rhs.second { return false }
+        if lhs.second < rhs.second { return true }
+        else if lhs.second > rhs.second { return false }
         
         return false
     }
 }
 
-public struct DateTime: Equatable{
+public struct DateTime{
     var timeCom = ":"
     var dateCom = "-"
 
@@ -224,24 +224,24 @@ public struct DateTime: Equatable{
         
         return "\(toHour):\(toMin):\(String(format: "%.3f", toSec.roundToPlaces(places: 3)))"
     }
-    static func > (left: inout DateTime, right: DateTime) -> Bool{
-        if left.year > right.year { return true}
-        else if left.year < right.year{ return false}
+    static func < (left: inout DateTime, right: DateTime) -> Bool{
+        if left.year < right.year { return true}
+        else if left.year > right.year{ return false}
         
-        if left.month > right.month { return true}
-        else if left.month < right.month { return false }
+        if left.month < right.month { return true}
+        else if left.month > right.month { return false }
         
-        if left.date > right.date { return true }
-        else if left.date < right.date { return false }
+        if left.date < right.date { return true }
+        else if left.date > right.date { return false }
         
-        if left.hour > right.hour { return true }
-        else if left.hour < right.hour { return false }
+        if left.hour < right.hour { return true }
+        else if left.hour > right.hour { return false }
         
-        if left.minute > right.minute { return true }
-        else if left.minute < right.minute { return false}
+        if left.minute < right.minute { return true }
+        else if left.minute > right.minute { return false}
         
-        if left.second > right.second { return true }
-        else if left.second < right.second { return false }
+        if left.second < right.second { return true }
+        else if left.second > right.second { return false }
         
         return false
     }
