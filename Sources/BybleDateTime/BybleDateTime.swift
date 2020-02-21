@@ -9,9 +9,9 @@
 import Foundation
 
 public struct Time{
-    var hour: Int
-    var minute: Int
-    var second: Float
+    public var hour: Int
+    public var minute: Int
+    public var second: Float
     public init (hour: Int, minute: Int, second: Float){
         self.hour = hour
         self.minute = minute
