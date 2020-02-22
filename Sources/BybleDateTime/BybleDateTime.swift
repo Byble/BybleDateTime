@@ -185,7 +185,7 @@ public struct DateTime{
     public func GetStr() -> String{
         return "\(year)-\(month)-\(date) \(hour):\(minute):\(second)"
     }
-
+    
     public func IsNight(h: Int, m: Int) -> Bool{
         if self.hour >= h && self.minute >= m{
             return true
