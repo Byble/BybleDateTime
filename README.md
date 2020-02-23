@@ -76,4 +76,5 @@ print(date.date)
 
 ### Use Xcode SPM
 ### https://github.com/Byble/BybleDateTime.git
-### Current Version is 2.0.2
+### .package(url: "https://github.com/Byble/BybleDateTime.git", .branch("master")),
+### Current Version is 2.1.4
